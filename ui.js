@@ -3,7 +3,6 @@ class UI {
     this.profileUI = document.getElementById('profile')
   }
   addProfile(user) {
-    console.log(user.html_url)
     const newProfile = `
     <div class="card card-body mb-3">
           <div class="row">
