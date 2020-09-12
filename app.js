@@ -8,7 +8,7 @@ function searchUser(e) {
     github.getUser(e.target.value).then(userData => {
       if (userData.profile.message === 'Not Found') {
         ui.clearProfile()
-        ui.setAlert('Profile Not Found', 'alert badge badge-warning mb-3')
+        ui.setAlert('Profile Not Found', 'alert alert-danger')
         setTimeout(() => {
           ui.removeAlert()
         }, 2000)
